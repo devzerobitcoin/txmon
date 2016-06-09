@@ -1,0 +1,20 @@
+{
+	"name" : "txmon",
+	"description" : "monitor Bitcoin network for transactions to known addresses",
+	"license" : "WTFPL",
+	"version" : "0.2.0",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/devzerobitcoin/txmon.git"
+	},
+	"dependencies" : {
+		"bitcore-lib" : "",
+		"bitcore-p2p" : "",
+		"level" : "",
+		"level-writestream" : "",
+		"async" : "",
+		"through2" : "",
+		"split" : "",
+		"request" : ""
+	}
+}
