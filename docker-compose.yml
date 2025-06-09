@@ -1,0 +1,9 @@
+version: "3"
+services:
+  txmon:
+    container_name: txmon
+    image: txmon:latest
+    volumes:
+      - ./addressdb:/txmon/addressdb
+      - ./.env:/txmon/.env
+    restart: unless-stopped

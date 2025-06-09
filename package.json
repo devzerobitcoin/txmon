@@ -1,20 +1,35 @@
 {
-	"name" : "txmon",
-	"description" : "monitor Bitcoin network for transactions to known addresses",
-	"license" : "WTFPL",
-	"version" : "0.2.0",
-	"repository" : {
-		"type" : "git",
-		"url" : "https://github.com/devzerobitcoin/txmon.git"
-	},
-	"dependencies" : {
-		"bitcore-lib" : "",
-		"bitcore-p2p" : "",
-		"level" : "",
-		"level-writestream" : "",
-		"async" : "",
-		"through2" : "",
-		"split" : "",
-		"request" : ""
-	}
+  "name": "txmon",
+  "version": "1.0.0",
+  "description": "monitor Bitcoin network for transactions to known addresses",
+  "main": "txmon.js",
+  "scripts": {
+    "start": "node txmon.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "axios-cache-interceptor": "^1.5.1",
+    "bitcore-lib": "^10.0.23",
+    "bitcore-p2p": "^10.0.23",
+    "dotenv": "^16.4.5",
+    "level": "^8.0.1",
+    "node-cron": "^3.0.3",
+    "secp256k1": "^5.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "WTFPL",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[tj]s?(x)"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
 }
