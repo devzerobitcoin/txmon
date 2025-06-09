@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0]
+
+### Changed
+
+- Add SIPHON_AMOUNT_MULTIPLIER env variable. This configures how much of the found amount will be siphoned, the rest being left for tx fee. Defaults to 0.5 if not set.
+
 ## [1.0.0]
 
 ### Changed

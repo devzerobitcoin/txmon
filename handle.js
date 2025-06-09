@@ -73,7 +73,10 @@ const getSiphonTransaction = async ({
     );
     const keys = matches.map(({ key }) => key);
     const transaction = new Transaction().from(utxos);
-    let siphonAmount = Math.ceil(transaction.inputAmount * 0.5);
+    let siphonAmount = Math.ceil(
+      transaction.inputAmount *
+        (parseFloat(process.env.SIPHON_AMOUNT_MULTIPLIER) || 0.5)
+    );
     siphonAmount = Math.max(siphonAmount, Transaction.DUST_AMOUNT);
     transaction.to(siphon, siphonAmount);
     transaction.sign(keys);

@@ -1,6 +1,6 @@
 {
   "name": "txmon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "monitor Bitcoin network for transactions to known addresses",
   "main": "txmon.js",
   "scripts": {
